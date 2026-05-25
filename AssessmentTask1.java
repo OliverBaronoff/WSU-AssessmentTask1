@@ -62,7 +62,13 @@ public class AssessmentTask1 {
             System.out.println("ERROR!\n"+
             "Error: Total number of books ordered cannot exceed 10.\n"+
             "Please enter valid quantities.\n");
-        } else {
+        }
+        else if(bookAmountTotal <= 0){
+            System.out.println("ERROR!\n"+
+            "Error: Total numbers of books ordered must be above 0.\n"+
+            "Please enter valid quantities.\n");
+        }
+        else {
             validInput = true;
         }
     }
